@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start CR Chatbot Development Server",
+			"type": "shell",
+			"command": "cd cr-chatbot && python3 -m http.server 9000",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
