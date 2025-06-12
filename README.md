@@ -3,10 +3,9 @@
 > A professional, clean web-based chatbot frontend for Ollama endpoints with thinking models support
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/demo-live-brightgreen)](https://3eekeeper.github.io/cr-chatbot/)
-[![GitHub Stars](https://img.shields.io/github/stars/3eekeeper/cr-chatbot)](https://github.com/3eekeeper/cr-chatbot/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/3eekeeper/cr-chatbot)](https://github.com/3eekeeper/cr-chatbot/issues)
-[![GitHub Release](https://img.shields.io/github/v/release/3eekeeper/cr-chatbot)](https://github.com/3eekeeper/cr-chatbot/releases)
+[![Deployment Ready](https://img.shields.io/badge/Deployment-Ready-brightgreen)](#-deployment-options)
+[![Docker Support](https://img.shields.io/badge/Docker-Supported-blue)](./DOCKER.md)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Ready-orange)](#-github-pages-deployment)
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen" alt="Production Ready">
@@ -18,7 +17,7 @@
 
 ## 🚀 Live Demo
 
-**Try it now**: [https://3eekeeper.github.io/cr-chatbot/](https://3eekeeper.github.io/cr-chatbot/)
+**Deploy your own**: Follow the [GitHub Deployment Guide](./GITHUB_DEPLOYMENT_GUIDE.md) to get your chatbot live in minutes!
 
 *Configure with your own Ollama endpoint to start chatting!*
 
