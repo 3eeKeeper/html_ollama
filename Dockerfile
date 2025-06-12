@@ -4,7 +4,7 @@ FROM nginx:alpine
 # Set maintainer label
 LABEL maintainer="CR Chatbot Team"
 LABEL description="Professional web-based chatbot frontend for Ollama endpoints"
-LABEL version="1.0.0"
+LABEL version="1.0.0-alpha"
 
 # Copy the entire project including landing page and chatbot files
 COPY . /usr/share/nginx/html/

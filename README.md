@@ -1,8 +1,9 @@
-# CR Chatbot
+# CR Chatbot v1.0.0-alpha
 
 > A professional, clean web-based chatbot frontend for Ollama endpoints with thinking models support
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-v1.0.0--alpha-blue.svg)](https://github.com/3eeKeeper/html_ollama/releases)
 [![Deployment Ready](https://img.shields.io/badge/Deployment-Ready-brightgreen)](#-deployment-options)
 [![Docker Support](https://img.shields.io/badge/Docker-Supported-blue)](./DOCKER.md)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Ready-orange)](#-github-pages-deployment)

@@ -18,9 +18,9 @@ fi
 VERSION=$1
 echo "📦 Preparing release: $VERSION"
 
-# Validate version format
-if [[ ! $VERSION =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-    echo "❌ Error: Version must be in format v1.0.0"
+# Validate version format (allow alpha, beta, rc suffixes)
+if [[ ! $VERSION =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?$ ]]; then
+    echo "❌ Error: Version must be in format v1.0.0 or v1.0.0-alpha"
     exit 1
 fi
 
