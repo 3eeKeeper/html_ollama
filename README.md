@@ -51,14 +51,7 @@
 
 ---
 
-## 🏁 Quick Start
-
-### Option 1: Use Live Demo
-1. Visit [https://3eekeeper.github.io/cr-chatbot/](https://3eekeeper.github.io/cr-chatbot/)
-2. Click Settings ⚙️ and configure your Ollama endpoint
-3. Start chatting!
-
-### Option 2: Local Setup
+### Option 1: Local Setup
 ```bash
 # Clone the repository
 git clone https://github.com/3eekeeper/cr-chatbot.git
@@ -72,7 +65,7 @@ cd cr-chatbot && python3 -m http.server 9000
 # Open http://localhost:9000 in your browser
 ```
 
-### Option 3: Docker (Recommended for Production)
+### Option 2: Docker (Recommended for Production)
 ```bash
 # Using docker-compose (easiest)
 git clone https://github.com/3eekeeper/cr-chatbot.git
