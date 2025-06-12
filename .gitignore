@@ -1,0 +1,59 @@
+# CR Chatbot - Git Ignore File
+
+# Development files
+.DS_Store
+.vscode/settings.json
+.vscode/launch.json
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime files
+node_modules/
+.npm
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+*.tgz
+*.tar.gz
+
+# IDE files
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Saved conversations (optional - users may want to exclude these)
+# cr-chatbot/chatbot/*.txt
+
+# Python cache (for development server)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

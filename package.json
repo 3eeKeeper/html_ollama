@@ -1,0 +1,48 @@
+{
+  "name": "cr-chatbot",
+  "version": "1.0.0",
+  "description": "A professional, clean web-based chatbot frontend for Ollama endpoints with thinking models support",
+  "main": "cr-chatbot/index.html",
+  "scripts": {
+    "start": "cd cr-chatbot && python3 -m http.server 9000",
+    "dev": "cd cr-chatbot && python3 -m http.server 9000",
+    "serve": "cd cr-chatbot && python3 -m http.server 9000",
+    "build": "echo 'No build step required - static files'",
+    "test": "echo 'No tests configured'",
+    "lint": "echo 'No linting configured - vanilla JS project'",
+    "deploy": "echo 'Deployment handled by GitHub Actions'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3eekeeper/cr-chatbot.git"
+  },
+  "keywords": [
+    "chatbot",
+    "ollama",
+    "ai",
+    "chat",
+    "frontend",
+    "web",
+    "javascript",
+    "thinking-models",
+    "reasoning",
+    "conversation",
+    "llm",
+    "local-ai"
+  ],
+  "author": "3eekeeper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3eekeeper/cr-chatbot/issues"
+  },
+  "homepage": "https://3eekeeper.github.io/cr-chatbot/",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}

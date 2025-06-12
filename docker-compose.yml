@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  cr-chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cr-chatbot:latest
+    container_name: cr-chatbot
+    ports:
+      - "8088:80"
+    restart: unless-stopped
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    # volumes:
+      # Optional: Mount configuration files for customization
+      # - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      # - ./custom-config:/etc/nginx/conf.d:ro
+    networks:
+      - cr-chatbot-network
+    labels:
+      - "com.docker.compose.project=cr-chatbot"
+      - "description=Professional web-based chatbot frontend for Ollama endpoints"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add Ollama service for complete setup
+  # Uncomment the lines below if you want to run Ollama alongside the chatbot
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: ollama-server
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama-data:/root/.ollama
+  #   restart: unless-stopped
+  #   networks:
+  #     - cr-chatbot-network
+  #   environment:
+  #     - OLLAMA_HOST=0.0.0.0
+  #   labels:
+  #     - "com.docker.compose.project=cr-chatbot"
+  #     - "description=Ollama LLM server"
+
+networks:
+  cr-chatbot-network:
+    driver: bridge
+    name: cr-chatbot-network
+
+# Optional: Uncomment if using Ollama service
+# volumes:
+#   ollama-data:
+#     name: ollama-data
